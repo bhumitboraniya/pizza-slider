@@ -91,3 +91,27 @@ if (prev && next) {
     next.onclick = nextSlider;
     prev.onclick = prevSlider;
 }
+
+// Handle mobile touch events for slider
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.querySelector('.slider').addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+}, false);
+
+document.querySelector('.slider').addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, false);
+
+function handleSwipe() {
+    if (touchEndX < touchStartX - 50) {
+        // Swipe left - next item
+        nextItem();
+    }
+    if (touchEndX > touchStartX + 50) {
+        // Swipe right - previous item
+        prevItem();
+    }
+}
