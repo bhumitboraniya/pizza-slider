@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizza Slider - Artisan Pizzas & Italian Cuisine</title>
+        <meta name="description" content="Discover Pizza Slider's delicious artisan pizzas, fresh salads, and Italian specialties. Family-owned since 2010, offering dine-in, takeout, and catering.">
+        <meta name="keywords" content="pizza, Italian food, restaurant, takeout, delivery, catering, artisan pizza, fresh ingredients, family restaurant">
+        <meta name="author" content="Pizza Slider">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://www.pizzaslider.com">
+        
+        <!-- Open Graph / Social Media Meta Tags -->
+        <meta property="og:title" content="Pizza Slider - Artisan Pizzas & Italian Cuisine">
+        <meta property="og:description" content="Discover Pizza Slider's delicious artisan pizzas, fresh salads, and Italian specialties.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.pizzaslider.com">
+        <meta property="og:image" content="https://www.pizzaslider.com/images/pizza-social-share.jpg">
+        <meta property="og:site_name" content="Pizza Slider">
+        
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Pizza Slider - Artisan Pizzas & Italian Cuisine">
+        <meta name="twitter:description" content="Discover Pizza Slider's delicious artisan pizzas, fresh salads, and Italian specialties.">
+        <meta name="twitter:image" content="https://www.pizzaslider.com/images/pizza-social-share.jpg">
+        
+        <!-- Favicon -->
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        
+        <!-- Structured Data / Schema Markup -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "Pizza Slider",
+          "image": "https://www.pizzaslider.com/images/restaurant.jpg",
+          "@id": "https://www.pizzaslider.com",
+          "url": "https://www.pizzaslider.com",
+          "telephone": "+15551234567",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Pizza Street",
+            "addressLocality": "Foodville",
+            "addressRegion": "PV",
+            "postalCode": "12345",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.7128,
+            "longitude": -74.0060
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday"
+            ],
+            "opens": "11:00",
+            "closes": "22:00"
+          },
+          "sameAs": [
+            "https://www.facebook.com/pizzaslider",
+            "https://www.instagram.com/pizzaslider",
+            "https://twitter.com/pizzaslider"
+          ]
+        }
+        </script>
+        
+        <link rel="stylesheet" href="style.css">
+     
+     
+     
+    <style>
+        /* Additional styles for the new pages */
+        .page {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to right, #2B2F3A, #0D0E12);
+            color: white;
+            padding: 100px 50px;
+            box-sizing: border-box;
+        }
+        .page.active {
+            display: block;
+        }
+        .page h1 {
+            color: #E88735;
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .page-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-method {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .category-item {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .category-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <ul>
+            <li class="active" data-page="home">Home</li>
+            <li data-page="contact">Contact</li>
+            <li data-page="info">Info</li>
+            <li data-page="category">Category</li>
+        </ul>
+    </header>
+
+    <!-- Home Page (Slider) -->
+    <div class="slider page active" id="home">
+        <div class="title">
+            Slider Pizza!
+        </div>
+        <div class="images">
+            <div class="item" style="--i: 1">
+                <img src="1.PNG">
+            </div>
+            <div class="item" style="--i: 2">
+                <img src="2.PNG">
+            </div>
+            <div class="item" style="--i: 3">
+                <img src="3.PNG">
+            </div>
+            <div class="item" style="--i: 4">
+                <img src="4.PNG">
+            </div>
+            <div class="item" style="--i: 5">
+                <img src="5.PNG">
+            </div>
+            <div class="item" style="--i: 6">
+                <img src="6.PNG">
+            </div>
+        </div>
+        <div class="content">
+            <div class="item active">
+                <h1>Smoky Chicken Platter</h1>
+                <div class="des">
+                    This vibrant meal features shredded chicken topped with savory sauce and pickled onions.
+                    On the side is a creamy corn salad mixed with green onions and peppers.
+                    Grilled seasonal vegetables, including zucchini, bell peppers, and squash, add a colorful touch.
+                    Served on a dark plate with a bold yellow backdrop, it's both hearty and visually appetizing.
+                </div>
+            </div>
+            <div class="item">
+                <h1>Char-Grilled Chicken Wings with Tangy Dip</h1>
+                <div class="des">
+                    This dish features juicy grilled chicken wings with beautifully charred skin for a smoky flavor.
+                    It's paired with a bowl of vibrant red chili sauce, perfect for dipping.
+                    Fresh basil leaves and cherry tomatoes add a touch of color and freshness.
+                    Presented on a white speckled plate, it's a simple yet appetizing appetizer or snack option.
+                </div>
+            </div>
+            <div class="item">
+                <h1>Grilled Salmon Garden Salad</h1>
+                <div class="des">
+                    This vibrant plate features a grilled salmon fillet resting on a bed of fresh mixed greens.
+                    The salad includes cherry tomatoes, red onions, and colorful lettuce varieties for a crisp bite.
+                    The salmon is perfectly seared, adding rich flavor and protein to this healthy dish.
+                    It's a visually appealing and nutritious meal ideal for light lunches or clean eating menus.
+                </div>
+            </div>
+            <div class="item">
+                <h1>Roasted Pumpkin Soup with Feta & Seeds</h1>
+                <div class="des">
+                    This is a hearty bowl of creamy pumpkin soup, rich in color and flavor.
+                    It's garnished with crumbled feta cheese, roasted pumpkin seeds, and a dash of paprika.
+                    The smooth texture pairs beautifully with the slight crunch of the toppings.
+                    Perfect for cozy evenings or as a warm appetizer on chilly days.
+                </div>
+            </div>
+            <div class="item">
+                <h1>Roasted Pumpkin Soup with Feta & Seeds</h1>
+                <div class="des">
+                    This dish features a fresh garden salad with crisp mixed greens and juicy cherry tomatoes.
+                    The vibrant colors reflect its high nutrient content and farm-fresh ingredients.
+                    Perfect as a light starter or a refreshing side dish.
+                    Ideal for health-conscious eaters looking for something clean and flavorful.
+                </div>
+            </div>
+            <div class="item">
+                <h1>Margherita Delight Pizza</h1>
+                <div class="des">
+                    This vibrant pizza features a golden, crispy crust topped with melted cheese and rich tomato sauce.
+                    Juicy cherry tomatoes and fresh basil leaves add bursts of freshness and color.
+                    Seasoned with herbs, it brings a perfect balance of flavor and aroma.
+                    An ideal choice for a classic yet refreshing vegetarian pizza experience.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div class="page" id="contact">
+        <h1>Contact Us</h1>
+        <div class="page-content">
+            <div class="contact-info">
+                <div class="contact-method">
+                    <h2>Visit Us</h2>
+                    <p>123 Pizza Street<br>
+                    Foodville, PV 12345<br>
+                    United States</p>
+                </div>
+                <div class="contact-method">
+                    <h2>Call Us</h2>
+                    <p>Phone: (555) 123-4567<br>
+                    Fax: (555) 123-4568</p>
+                </div>
+                <div class="contact-method">
+                    <h2>Email Us</h2>
+                    <p>General Inquiries: info@pizzaslider.com<br>
+                    Catering: events@pizzaslider.com</p>
+                </div>
+                <div class="contact-method">
+                    <h2>Hours</h2>
+                    <p>Monday-Thursday: 11am-10pm<br>
+                    Friday-Saturday: 11am-11pm<br>
+                    Sunday: 12pm-9pm</p>
+                </div>
+            </div>
+            <h2 style="margin-top: 30px;">Send Us a Message</h2>
+            <form>
+                <input type="text" placeholder="Your Name" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+                <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none;">
+                <textarea placeholder="Your Message" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; height: 150px;"></textarea>
+                <button type="submit" style="background-color: #E88735; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Info Page -->
+    <div class="page" id="info">
+        <h1>About Pizza Slider</h1>
+        <div class="page-content">
+            <h2>Our Story</h2>
+            <p>Founded in 2010, Pizza Slider began as a small family-owned pizzeria with a passion for creating innovative pizza experiences. What started as a single location has grown into a beloved local chain, known for our rotating selection of unique pizza creations.</p>
+            
+            <h2>Our Philosophy</h2>
+            <p>At Pizza Slider, we believe in:</p>
+            <ul>
+                <li>Using only the freshest, locally-sourced ingredients</li>
+                <li>Innovating while respecting pizza traditions</li>
+                <li>Creating a fun, welcoming atmosphere for all our guests</li>
+                <li>Supporting our local community through various initiatives</li>
+            </ul>
+            
+            <h2>Our Team</h2>
+            <p>Our chefs bring together decades of culinary experience from around the world, combining traditional techniques with modern flair. Each month, our team collaborates to create new seasonal specials that keep our menu exciting and fresh.</p>
+            
+            <h2>Sustainability</h2>
+            <p>We're committed to environmentally responsible practices:</p>
+            <ul>
+                <li>100% of our packaging is compostable or recyclable</li>
+                <li>We source ingredients from sustainable farms</li>
+                <li>Our restaurants use energy-efficient equipment</li>
+                <li>We donate unused food to local shelters</li>
+            </ul>
+        </div>
+    </div>
+
+   <!-- Category Page -->
+<div class="page" id="category">
+    <h1>Our Menu Categories</h1>
+    <div class="page-content">
+        <div class="category-grid">
+            <div class="category-item">
+                <i class="fas fa-pizza-slice fa-4x"></i>
+                <h3>Classic Pizzas</h3>
+                <p>Traditional favorites made with our signature crust and premium ingredients</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-cheese fa-4x"></i>
+                <h3>Specialty Pizzas</h3>
+                <p>Our chef's creative combinations that change monthly</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-bread-slice fa-4x"></i>
+                <h3>Appetizers</h3>
+                <p>Perfect starters to share before your pizza arrives</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-leaf fa-4x"></i>
+                <h3>Salads</h3>
+                <p>Fresh, crisp greens and vegetables from local farms</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-ice-cream fa-4x"></i>
+                <h3>Desserts</h3>
+                <p>Sweet treats to complete your meal</p>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-glass-martini-alt fa-4x"></i>
+                <h3>Drinks</h3>
+                <p>Refreshing beverages including local craft beers</p>
+            </div>
+        </div>
+        <div style="margin-top: 30px; text-align: center;">
+            <h2>Seasonal Specials</h2>
+            <p>Every season we introduce limited-time offerings featuring fresh, seasonal ingredients. Ask your server about our current specials!</p>
+            <button style="background-color: #E88735; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 15px;">View Current Specials</button>
+        </div>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+    <script>
+        // Navigation between pages
+        document.querySelectorAll('header li').forEach(item => {
+            item.addEventListener('click', function() {
+                // Remove active class from all nav items
+                document.querySelectorAll('header li').forEach(navItem => {
+                    navItem.classList.remove('active');
+                });
+                
+                // Add active class to clicked nav item
+                this.classList.add('active');
+                
+                // Hide all pages
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active');
+                });
+                
+                // Show selected page
+                const pageId = this.getAttribute('data-page');
+                document.getElementById(pageId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
