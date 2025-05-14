@@ -17,8 +17,8 @@
 
 ## Project Structure 📂
 
-dominos-pizza-slider/
-├── index.html # Main HTML file
+dominos-pizza-slider/ <br>
+├── index.html # Main HTML file 
 ├── style.css # All CSS styles
 ├── app.js # JavaScript functionality
 ├── images/ # Pizza images
