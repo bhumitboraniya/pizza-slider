@@ -1,4 +1,5 @@
 # Domino's Pizza Slider 🍕
+![pizzaslider](https://github.com/user-attachments/assets/3c53c7f0-99ff-496e-b207-97841025ba53)
 
 
 ## Features ✨
