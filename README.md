@@ -1,19 +1,43 @@
-live link: https://dominos-slider.netlify.app/
+# Domino's Pizza Slider 🍕
 
 
-###Features ✨
-Interactive Pizza Slider: Rotating carousel with smooth animations
+## Features ✨
+- Interactive rotating pizza carousel
+- Responsive design for all devices
+- Multiple sections (Home, Contact, Info, Category)
+- Smooth CSS animations and transitions
+- Touch support for mobile devices
 
-Multi-page Navigation: Home, Contact, Info, and Category sections
+## Technologies Used 💻
+- **HTML5**
+- **CSS3** (Flexbox, Grid, Animations)
+- **JavaScript** (ES6)
+- **Google Fonts** (Pacifico, Roboto, Poppins)
+- **Font Awesome** Icons
 
-Fully Responsive: Optimized for mobile, tablet, and desktop
+## Project Structure 📂
 
-Touch Support: Swipe gestures for mobile users
+dominos-pizza-slider/
+├── index.html # Main HTML file
+├── style.css # All CSS styles
+├── app.js # JavaScript functionality
+├── images/ # Pizza images
+│ ├── 1.PNG
+│ ├── 2.PNG
+│ ├── 3.PNG
+│ ├── 4.PNG
+│ ├── 5.PNG
+│ └── 6.PNG
+└── README.md # Documentation
 
-###Tech Stack 💻
-Frontend: HTML5, CSS3, JavaScript
 
-Fonts: Google Fonts (Pacifico, Roboto, Poppins)
 
-Icons: Font Awesome
-
+## Installation & Usage 🚀
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/dominos-pizza-slider.git
+2. Open index.html in your browser
+3. Interact with the slider using:
+   Navigation buttons,
+   Swipe gestures (on mobile),
+   Menu tabs
