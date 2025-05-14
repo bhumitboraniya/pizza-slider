@@ -18,18 +18,18 @@
 ## Project Structure 📂
 
 dominos-pizza-slider/ <br>
-├── index.html # Main HTML file 
-├── style.css # All CSS styles
-├── app.js # JavaScript functionality
-├── images/ # Pizza images
-│ ├── 1.PNG
-│ ├── 2.PNG
-│ ├── 3.PNG
-│ ├── 4.PNG
-│ ├── 5.PNG
-│ └── 6.PNG
+├── index.html # Main HTML file  <br>
+├── style.css # All CSS styles <br>
+├── app.js # JavaScript functionality <br>
+├── images/ # Pizza images <br>
+│ ├── 1.PNG <br>
+│ ├── 2.PNG <br>
+│ ├── 3.PNG <br>
+│ ├── 4.PNG <br>
+│ ├── 5.PNG <br>
+│ └── 6.PNG <br>
 └── README.md # Documentation
-
+ <br>
 
 
 ## Installation & Usage 🚀
